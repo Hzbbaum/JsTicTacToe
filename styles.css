@@ -1,0 +1,78 @@
+.container-fluid {
+  border: 5px solid #84afff;
+  background-color: #84afff;
+}
+
+.board {
+  display: inline-grid;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  place-items: center center;
+  background-color: #7163bf;
+  align-self: center;
+}
+
+.cell {
+  margin: 4px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 7rem;
+  background-color: #d484ff;
+  color: #000;
+}
+
+.panel {
+  display: flexbox;
+  position: relative;
+  flex-direction: row;
+  background-color: #d484ff;
+  color: #000;
+}
+
+.btn, .btn.btn-secondary {
+  display: inline-block;
+  color: #000;
+  background-color: #7163bf;
+  margin-top: 20%;
+}
+.btn:hover, .btn.btn-secondary:hover {
+  background-color: none;
+  border-color: #6c757d;
+  color: #fff;
+}
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .btn.btn-secondary:not(:disabled):not(.disabled):active, .btn.btn-secondary:not(:disabled):not(.disabled).active {
+  box-shadow: none;
+}
+.btn:focus, .btn.btn-secondary:focus {
+  box-shadow: none;
+}
+
+.messageBox {
+  position: relative;
+  margin-top: 20%;
+  padding-right: 10rem;
+  display: block;
+  line-height: 1.8rem;
+  width: 35%;
+  border: 3px solid #7163bf;
+  border-radius: 4px;
+  padding: 3px;
+  font-weight: 500;
+}
+
+.messageBox.Label {
+  width: auto;
+  padding: 0%;
+  position: absolute;
+  top: -50%;
+  left: 4%;
+  margin-top: 0%;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #d484ff;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,91 @@
+$boxDim: 120px;
+$primary1: #000;
+$secondary1: #d484ff;
+$primary2: #7163bf;
+$secondary2: #84afff;
+
+.container-fluid{
+    border: 5px solid $secondary2;
+    background-color: $secondary2
+}
+
+.board{
+    display: inline-grid;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    place-items: center center;
+    background-color:$primary2;
+    align-self: center;
+}
+
+.cell{
+
+    margin: 4px;
+    width: $boxDim;
+    height: $boxDim;
+    text-align: center;
+    line-height: $boxDim;
+    font-size: 7rem;
+    background-color:$secondary1;
+    color: $primary1;
+}
+
+.panel{
+    display: flexbox;
+    position: relative;
+    flex-direction: row;
+    background-color: $secondary1;
+    color: $primary1;
+}
+
+.btn, .btn.btn-secondary{
+    display: inline-block;
+    color: $primary1;
+    background-color: $primary2;
+    margin-top: 20%;
+
+    &:hover{
+        background-color: none;
+        border-color: #6c757d;
+        color: #fff;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      box-shadow:none;
+    }
+  
+      &:focus {
+        box-shadow: none;
+      }
+
+}
+
+
+.messageBox
+{
+    position: relative;
+    margin-top: 20%;
+    padding-right: 10rem;
+    display: block;
+    line-height: 1.8rem;
+    width: 35%;
+    border: 3px solid $primary2;
+    border-radius: 4px;
+    padding: 3px;
+    font-weight: 500;
+}
+
+
+.messageBox.Label{
+    width: auto;
+    padding: 0%;
+    position: absolute;
+    top: -50%;
+    left: 4%;
+    margin-top: 0%;
+    font-size: 0.7rem;
+    border: none;
+    background-color: $secondary1;
+}
